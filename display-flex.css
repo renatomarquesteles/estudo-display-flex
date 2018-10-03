@@ -1,0 +1,45 @@
+*{
+display:flex;
+/* justify-content alinha itens horizontalmente e aceita os seguintes valores: */
+justify-content: flex-start;    /* alinha itens no lado esquerdo do container */
+justify-content: flex-end;      /* alinha itens no lado direito do container */
+justify-content: center;        /* alinha itens no centro do container */
+justify-content: space-between; /* itens aparecem com espaços iguais entre eles */
+justify-content: space-around;  /* itens aparecem com espaços iguais ao redor deles */
+/* align-items alinha itens verticalmente e aceita os seguintes valores: */
+align-items: flex-start;    /* alinha itens no topo do container */
+align-items: flex-end;      /* alinha itens na parte inferior do container */
+align-items: center;        /* alinha itens no centro vertical do container */
+align-items: baseline;      /* itens aparecem na baseline do container */
+align-items: stretch;       /* itens ficam esticados para caber no container */
+/* flex-direction define a direção em que os itens estarão dispostos no container, e aceita os seguintes valores: */
+flex-direction: row;            /* itens são colocados na mesma direção que o texto */
+flex-direction: row-reverse;    /* itens são colocados na direção oposta ao indicado pelo texto; */
+flex-direction: column;         /* itens são colocados de cima para baixo */
+flex-direction: column-reverse; /* itens são colocados de baixo para cima */
+/* order é aplicado à itens individuais. Por padrão, itens tem o valor de 0, mas podemos utilizar essa propriedade para setar esse valor como inteiro positivo ou negativo */
+order: -1;   /* a ordem é feita da esquerda pra direita de forma crescente: -1 , 0 , 1 , 2 ... */
+order: 0;   /* o padrão de todos itens é 0 */
+order: 10;  
+/* align-self é aplicado À itens individuais. Essa propriedade aceita os mesmos valores de align-items e funciona apanas para o item especifico */
+align-self: flex-start;
+align-self: flex-end;
+align-self: center;
+align-self: baseline;
+align-self: stretch;
+/* flex-wrap espalha os itens pelo container, aceita os seguintes valores: */
+flex-wrap: nowrap;      /* todos os itens ficam encaixados em uma única linha */
+flex-wrap: wrap;        /* itens ficam dispostos em linhas adicionais */
+flex-wrap: wrap-reverse;/* itens ficam invertidos e dispostos em linhas adicionais */
+/* flex-flow combina flex-direction com flex-wrap */
+flex-flow: row wrap;
+flex-flow: column-reverse wrap-reverse;
+flex-flow: row-reverse nowrap;
+/* align-content seta o espaçamento entre múltiplas linhas. */
+align-content: flex-start;      /* linhas ficam acondicionadas no topo do container */
+align-content: flex-end;        /* linhas ficam acondicionadas na parte inferior do container */
+align-content: center;          /* linhas ficam acondicionadas no centro vertical do container */
+align-content: space-between;   /* linhas são mostradas com espaçamento igual entre elas */
+align-content: space-around;    /* linhas são mostradas com espaçamento igual ao redor delas */
+align-content: stretch;         /* linhas são esticadas para caber no container */
+}
